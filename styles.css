@@ -103,7 +103,7 @@ img {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
-        width: 60vw;
+        max-width: 93rem;
         margin-top: 10rem;
         grid-column-gap: 2rem;
     }
