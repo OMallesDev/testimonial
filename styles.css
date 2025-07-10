@@ -1,0 +1,152 @@
+:root {
+    /*Primary Colors*/
+    --purple50: hsl(260, 100%, 95%);
+    --purple300: hsl(264, 82%, 80%);
+    --purple500: hsl(263, 55%, 52%);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --grey100: hsl(214, 17%, 92%);
+    --grey200: hsl(0, 0%, 81%);
+    --grey400: hsl(224, 10%, 45%);
+    --grey500: hsl(217, 19%, 35%);
+    --darkblue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+
+}
+
+:root::before, :root::after {
+    box-sizing: border-box
+}
+body {
+    padding: 3rem 0 4rem;
+    background-color: var(--white);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 75vw;
+    margin: 3rem auto;
+}
+
+.card {
+    text-align: left;
+    padding: 1.5rem 2.6rem;
+    box-shadow: 1rem 1rem 1.5rem 0.5rem var(--grey200);
+    border-radius: 0.5rem;
+
+}
+img {
+    display: inline-block;
+    border-radius: 50%;
+    width: 2.5rem;
+    margin-inline-end: 1rem;;
+}
+.nameplate {
+    display: inline-block;
+    margin-bottom: -1rem;
+}
+.name {
+    margin-bottom: -0.7rem;  
+}
+.graduate {
+    font-weight: 300;
+}
+.testimonial {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.one {
+    background-color: var(--purple500);
+    color: var(--white);
+}
+
+.two {
+    background-color: var(--grey500);
+    color: var(--white);
+}
+
+.three {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.four {
+    background-color: var(--darkblue);
+    color: var(--grey100);
+}
+
+.five {
+    background-color: var(--white);
+    color: var(--grey500);
+}
+
+
+@media screen and (min-width: 50rem) {
+
+    body {
+        overflow-x: hidden;
+    }
+    
+    .container {
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        width: 60vw;
+        margin-top: 10rem;
+        grid-column-gap: 2rem;
+    }
+    .card {
+        padding-bottom: 1.5rem;
+    }
+
+    .one {
+        grid-column: 1/3;
+        grid-row: 1;
+        align-self: start;
+        background-image: url(images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: 365px;
+        box-shadow: 1.5rem 1rem 1rem 0.5rem var(--grey200);
+    }
+
+    .two {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: start;
+    }
+
+    .three {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: start;
+        padding-bottom: 0.5rem;
+        width: 14.5rem;
+    }
+    
+    .four {
+        grid-column: 2/4;
+        grid-row: 2;
+        align-self: start;
+        padding: 1rem 3rem;
+    }
+    .five {
+        grid-column: 4;
+        grid-row: 1/4;
+        width: 13.8rem;
+        align-self: start;
+        box-shadow: 3rem 4rem 4rem 1rem var(--grey200);
+    }
+}
