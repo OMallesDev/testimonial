@@ -41,7 +41,6 @@ body {
 .card {
     text-align: left;
     padding: 1.5rem 2.6rem;
-    box-shadow: 1rem 1rem 1.5rem 0.5rem var(--grey200);
     border-radius: 0.5rem;
 
 }
@@ -71,6 +70,9 @@ img {
     color: var(--white);
     box-shadow: 1.5rem 1rem 1rem 0.5rem var(--grey200);
 }
+.one img {
+    border: 2px solid var(--purple300)
+}
 
 .two {
     background-color: var(--grey500);
@@ -88,6 +90,9 @@ img {
     background-color: var(--darkblue);
     color: var(--grey100);
     box-shadow: 1.5rem 4rem 4rem 0.5rem var(--grey200);
+}
+.four img {
+    border: 2px solid var(--purple300)
 }
 
 .five {
