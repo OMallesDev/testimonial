@@ -69,26 +69,31 @@ img {
 .one {
     background-color: var(--purple500);
     color: var(--white);
+    box-shadow: 1.5rem 1rem 1rem 0.5rem var(--grey200);
 }
 
 .two {
     background-color: var(--grey500);
     color: var(--white);
+    box-shadow: 2rem 1rem 3rem 0rem var(--grey200);
 }
 
 .three {
     background-color: var(--white);
     color: var(--grey500);
+    box-shadow: 1.5rem 4rem 4rem 0.5rem var(--grey200);
 }
 
 .four {
     background-color: var(--darkblue);
     color: var(--grey100);
+    box-shadow: 1.5rem 4rem 4rem 0.5rem var(--grey200);
 }
 
 .five {
     background-color: var(--white);
     color: var(--grey500);
+    box-shadow: 3rem 4rem 4rem 1rem var(--grey200);
 }
 
 
@@ -105,7 +110,7 @@ img {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr 1fr;
-        max-width: 93rem;
+        max-width: 90rem;
         min-width: 90rem;
         margin: 0 auto;
         grid-column-gap: 2rem;
@@ -122,7 +127,6 @@ img {
         background-repeat: no-repeat;
         background-position-y: top;
         background-position-x: 365px;
-        box-shadow: 1.5rem 1rem 1rem 0.5rem var(--grey200);
     }
 
     .two {
@@ -150,6 +154,5 @@ img {
         grid-row: 1/4;
         width: 13.8rem;
         align-self: start;
-        box-shadow: 3rem 4rem 4rem 1rem var(--grey200);
     }
 }
